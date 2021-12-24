@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const NavBar = styled.header`
@@ -23,12 +22,6 @@ const Brand = styled.div`
 const MenuBar = styled.nav`
   display: flex;
   justify-content: flex-end;
-  & a {
-    margin: 20px;
-  }
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `
 
 const MenuButton = styled.button`
@@ -40,19 +33,25 @@ const MenuButton = styled.button`
   }
 `
 
+const NavMenuButton = styled.a`
+  color: yellow;
+  text-decoration: none;
+`
+
 export const Navigation = () => {
   return (
     <>
       <NavBar>
         <Brand>
-          <Link href="/">RealShivesh</Link>
+          <NavMenuButton href="/">RealShivesh</NavMenuButton>
         </Brand>
         <MenuBar>
-          <Link href="About"> About Me </Link>
-          <Link href="Projects"> Projects </Link>
-          <Link href="Skills"> Skills </Link>
-          <Link href="#"> Blogs </Link>
-          <Link href="ContactMe"> Contact Me </Link>
+          <NavMenuButton href="#about"> About Me </NavMenuButton>
+          <NavMenuButton href="#projects"> Projects </NavMenuButton>
+          <NavMenuButton href="#skills"> Skills </NavMenuButton>
+          <NavMenuButton href="#"> Blogs </NavMenuButton>
+          <NavMenuButton href="#projects"> Projects </NavMenuButton>
+          <NavMenuButton href="#contactme"> Contact Me </NavMenuButton>
           <select name="Select Language" id="language">
             <option value="en">English</option>
             <option value="de">Deutsch</option>

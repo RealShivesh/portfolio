@@ -3,11 +3,14 @@ import { RiWhatsappFill } from 'react-icons/ri'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { GrMail } from 'react-icons/gr'
 import styled from 'styled-components'
-
-const NavMenuButton = styled.a`
-  color: yellow;
-  text-decoration: none;
-`
+import {
+  About,
+  ContactMe,
+  Footer,
+  Navigation,
+  Projects,
+  Skills,
+} from './components'
 
 function App() {
   return (
@@ -18,27 +21,9 @@ function App() {
         <div>Yo soy Shivesh Sinha</div>
         <div>Ich bin Shivesh Sinha</div>
       </header>
-      <nav>
-        <div className="nav-header">RealShivesh</div>
-        <div className="nav-menu">
-          <NavMenuButton href="#about" className="items">
-            About
-          </NavMenuButton>
-          <NavMenuButton href="#skills" className="items">
-            Skills
-          </NavMenuButton>
-          <NavMenuButton href="#projects" className="items">
-            Projects
-          </NavMenuButton>
-          <NavMenuButton href="#blog" className="items">
-            Blog
-          </NavMenuButton>
-          <NavMenuButton href="#contactme" className="items">
-            Connect with me
-          </NavMenuButton>
-        </div>
-      </nav>
+      <Navigation />
       <h1 id="about">About Me</h1>
+      <About />
       <section>
         Shivesh is currently a final year undergraduate student studying in BITS
         Pilani Goa Campus. I am a front end web developer with a keen awareness
@@ -48,6 +33,7 @@ function App() {
         learning more about psychology.
       </section>
       <h1 id="skills">Skills</h1>
+      <Skills />
       <section>
         My skills:
         <li>HTML</li>
@@ -63,6 +49,7 @@ function App() {
         fluency in Spanish and German and basic fluency in French.
       </section>
       <h1 id="projects">Projects</h1>
+      <Projects />
       <section>
         This space will contain my projects, which are yet to be done.
       </section>
@@ -71,6 +58,7 @@ function App() {
         I like to write some blogs, so here, my medium articles will be present.
       </section>
       <h1 id="contactme">Connect with me</h1>
+      <ContactMe />
       <section>
         Wanna connect with me? Why not? You can connect with me using the
         following links:
@@ -81,10 +69,7 @@ function App() {
           <RiWhatsappFill size={40} fill={'#25D366'} style={{ padding: 20 }} />
         </div>
       </section>
-      <footer>
-        Created by Shivesh Sinha Copyright (c) 2021 <FaGithub size={30} />{' '}
-        github.com/realshivesh
-      </footer>
+      <Footer />
     </div>
   )
 }
