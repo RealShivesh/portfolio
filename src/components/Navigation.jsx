@@ -36,6 +36,7 @@ const MenuButton = styled.button`
 const NavMenuButton = styled.a`
   color: yellow;
   text-decoration: none;
+  margin: 20px;
 `
 
 export const Navigation = () => {
@@ -58,7 +59,7 @@ export const Navigation = () => {
             <option value="es">Español</option>
           </select>
         </MenuBar>
-        <MenuButton>Menu</MenuButton>
+        {/* <MenuButton>Menu</MenuButton> */}
       </NavBar>
     </>
   )

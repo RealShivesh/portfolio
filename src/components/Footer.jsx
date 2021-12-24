@@ -3,7 +3,6 @@ import { FaGithub } from 'react-icons/fa'
 
 const FootRow = styled.footer`
   display: flex;
-  flex-direction: column;
   flex: 1;
   padding: 0.6rem 0;
   border-top: 1px solid #eaeaea;
@@ -18,7 +17,8 @@ export const Footer = () => {
     <>
       <FootRow>
         Created by Shivesh Sinha Copyright (c) {CurrentYear}{' '}
-        <FaGithub size={30} /> github.com/realshivesh
+        <FaGithub size={30} />{' '}
+        <a href="http://github.com/realshivesh">github.com/realshivesh</a>
       </FootRow>
     </>
   )

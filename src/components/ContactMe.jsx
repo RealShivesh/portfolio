@@ -1,4 +1,15 @@
 import styled from 'styled-components'
+import { GrMail } from 'react-icons/gr'
+import {
+  FaTwitter,
+  FaLinkedin,
+  FaPinterest,
+  FaGithub,
+  FaMedium,
+  FaWhatsapp,
+  FaMailBulk,
+  FaEnvelope,
+} from 'react-icons/fa'
 
 const Social = styled.div`
   display: flex;
@@ -7,49 +18,63 @@ const Social = styled.div`
   flex-grow: 1;
   flex-wrap: wrap;
   & a {
-    margin: 0px 20px;
+    margin: 20px;
   }
 `
 
 export const ContactMe = () => {
   return (
     <>
-      <div>Feel free to connect with me here.</div>
+      <div>
+        Wanna connect with me? Why not? You can connect with me using the
+        following links:
+      </div>
       <Social>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://twitter.com/Real_Shivesh"
         >
-          Twitter
+          <FaTwitter size={40} />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://linkedin.com/in/realshivesh"
         >
-          LinkedIn
+          <FaLinkedin size={40} fill={'blue'} />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://pinterest.com/realshivesh"
         >
-          Pinterest
+          <FaPinterest size={40} />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://github.com/realshivesh"
         >
-          GitHub
+          <FaGithub size={40} />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://medium.com/@realshivesh"
         >
-          Medium
+          <FaMedium size={40} />
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://mailto:realshivesh@gmail.com"
+        >
+          <FaEnvelope size={40} />
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://wa.me/+918789110751">
+          {' '}
+          <FaWhatsapp size={40} />{' '}
         </a>
       </Social>
     </>

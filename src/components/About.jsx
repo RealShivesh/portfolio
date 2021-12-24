@@ -17,22 +17,22 @@ const Heading = styled.h1`
 const Paragraph = styled.div`
   font-size: 1.5rem;
   text-align: left;
-  width: 40vw;
+  width: 80vw;
 `
 
 export const About = () => {
   return (
     <>
       <Section>
-        <div>
-          <Heading>Hey there!</Heading>
-        </div>
-        <div>
-          <Paragraph>
-            My name is Shivesh Sinha,I am a front-end React Developer who loves
-            to make apps.
-          </Paragraph>
-        </div>
+        <Heading>About Me</Heading>
+        <Paragraph>
+          Shivesh is currently a final year undergraduate student studying in
+          BITS Pilani Goa Campus. I am a front end web developer with a keen
+          awareness about the web development as well as UI/UX desgning. I
+          possess different passions and interests, including watching football,
+          learning languages, writing poetry, pushing my body to the limits by
+          working out and learning more about psychology.
+        </Paragraph>
       </Section>
     </>
   )
