@@ -8,7 +8,7 @@ export const Projects = () => {
   return (
     <>
       <Page>
-        <div>Projects</div>
+        <h1>Projects</h1>
       </Page>
     </>
   )

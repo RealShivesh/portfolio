@@ -7,7 +7,6 @@ import {
   FaGithub,
   FaMedium,
   FaWhatsapp,
-  FaMailBulk,
   FaEnvelope,
 } from 'react-icons/fa'
 
@@ -25,6 +24,7 @@ const Social = styled.div`
 export const ContactMe = () => {
   return (
     <>
+      <h1>Contact Me</h1>
       <div>
         Wanna connect with me? Why not? You can connect with me using the
         following links:

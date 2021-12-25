@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Section = styled.section`
-  height: 60vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background: #ef233c;
@@ -16,7 +16,8 @@ const Heading = styled.h1`
 
 const Paragraph = styled.div`
   font-size: 1.5rem;
-  text-align: left;
+  text-align: justify;
+  align-self: center;
   width: 80vw;
 `
 
