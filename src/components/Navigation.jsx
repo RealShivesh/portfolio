@@ -32,7 +32,10 @@ const MenuBar = styled.nav`
   display: flex;
   justify-content: flex-end;
   @media only screen and (max-width: 768px) {
+    //display: none;
+    position: relative;
     flex-direction: column;
+    display: flex;
   }
 `
 
@@ -44,17 +47,27 @@ const MenuButton = styled.div`
   color: #aaaa33;
   text-decoration: none;
   justify-content: flex-end;
+  cursor: pointer;
+  &:hover {
+    animation: mymove 1s;
+    @keyframes mymove {
+      50% {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
   @media only screen and (min-width: 768px) {
     display: none;
   }
 `
 
-const NavLink = styled.div`
+const NavLink = styled.a`
   padding: 20px;
-  & a {
-    color: yellow;
-    text-decoration: none;
-  }
+
+  color: yellow;
+  text-decoration: none;
+
   &:hover {
     background: #33333333;
   }
@@ -65,18 +78,16 @@ const NavLink = styled.div`
   }
 `
 
-const BrandLink = styled.div`
+const BrandLink = styled.a`
   padding: 20px;
-  & a {
-    color: yellow;
-    text-decoration: none;
-  }
+  color: yellow;
+  text-decoration: none;
+
   &:hover {
     background: #33333333;
   }
   @media only screen and (max-width: 768px) {
     align-items: flex-start;
-    width: 100%;
   }
 `
 
@@ -84,53 +95,43 @@ const LanguageSelector = styled.select`
   width: 100%;
   background: #333;
   color: #ccc;
+  padding: 20px;
+  text-align: center;
 `
 
 export const Navigation = () => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  const [toggleMenu, setToggleMenu] = useState(false)
+  const windowLength = window.innerWidth
+  console.log(windowLength)
   return (
     <>
       <NavBar>
         <Brand>
-          <BrandLink>
-            {' '}
-            <a href="#home">RealShivesh</a>
-          </BrandLink>
-          <MenuButton>
+          <BrandLink href="#home">RealShivesh</BrandLink>
+          <MenuButton
+            onClick={() => {
+              setToggleMenu(!toggleMenu)
+              console.log(toggleMenu)
+            }}
+          >
             <FaBars size={40} />{' '}
           </MenuButton>
         </Brand>
-        <MenuBar>
-          <NavLink>
-            {' '}
-            <a href="#about"> About Me </a>
-          </NavLink>
-          <NavLink>
-            {' '}
-            <a href="#projects"> Projects </a>
-          </NavLink>
-          <NavLink>
-            {' '}
-            <a href="#skills"> Skills </a>
-          </NavLink>
-          <NavLink>
-            {' '}
-            <a href="#blogs"> Blogs </a>
-          </NavLink>
-          <NavLink>
-            {' '}
-            <a href="#projects"> Projects</a>{' '}
-          </NavLink>
-          <NavLink>
-            {' '}
-            <a href="#contactme"> Contact Me </a>
-          </NavLink>
-          <LanguageSelector name="Select Language" id="language">
-            <option value="en">English</option>
-            <option value="de">Deutsch</option>
-            <option value="es">Español</option>
-          </LanguageSelector>
-        </MenuBar>{' '}
+        {!toggleMenu && windowLength < 768 && (
+          <MenuBar toggleMenu={toggleMenu}>
+            <NavLink href="#about"> About Me</NavLink>
+            <NavLink href="#projects"> Projects</NavLink>
+            <NavLink href="#skills"> Skills</NavLink>
+            <NavLink href="#blogs"> Blogs</NavLink>
+            <NavLink href="#projects"> Project </NavLink>
+            <NavLink href="#contactme"> Contact Me</NavLink>
+            <LanguageSelector name="Select Language" id="language">
+              <option value="en">English</option>
+              <option value="de">Deutsch</option>
+              <option value="es">Español</option>
+            </LanguageSelector>
+          </MenuBar>
+        )}
       </NavBar>
     </>
   )
