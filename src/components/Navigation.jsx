@@ -117,21 +117,19 @@ export const Navigation = () => {
             <FaBars size={40} />{' '}
           </MenuButton>
         </Brand>
-        {!toggleMenu && windowLength < 768 && (
-          <MenuBar toggleMenu={toggleMenu}>
-            <NavLink href="#about"> About Me</NavLink>
-            <NavLink href="#projects"> Projects</NavLink>
-            <NavLink href="#skills"> Skills</NavLink>
-            <NavLink href="#blogs"> Blogs</NavLink>
-            <NavLink href="#projects"> Project </NavLink>
-            <NavLink href="#contactme"> Contact Me</NavLink>
-            <LanguageSelector name="Select Language" id="language">
-              <option value="en">English</option>
-              <option value="de">Deutsch</option>
-              <option value="es">Español</option>
-            </LanguageSelector>
-          </MenuBar>
-        )}
+        <MenuBar toggleMenu={toggleMenu}>
+          <NavLink href="#about"> About Me</NavLink>
+          <NavLink href="#projects"> Projects</NavLink>
+          <NavLink href="#skills"> Skills</NavLink>
+          <NavLink href="#blogs"> Blogs</NavLink>
+          <NavLink href="#projects"> Project </NavLink>
+          <NavLink href="#contactme"> Contact Me</NavLink>
+          <LanguageSelector name="Select Language" id="language">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+          </LanguageSelector>
+        </MenuBar>
       </NavBar>
     </>
   )
