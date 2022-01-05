@@ -41,9 +41,9 @@ const MenuBar = styled.nav`
 
 const MenuButton = styled.div`
   display: flex;
-  width: 40px;
-  height: 40px;
-  margin: 10px 20px;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0.625em 1.25em;
   color: #aaaa33;
   text-decoration: none;
   justify-content: flex-end;
@@ -63,15 +63,17 @@ const MenuButton = styled.div`
 `
 
 const NavLink = styled.a`
-  padding: 20px;
-
+  padding: 1em;
+  width: 6em;
   color: yellow;
   text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
 
   &:hover {
     background: #33333333;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     align-items: flex-start;
     width: 100%;
     text-align: center;
@@ -92,10 +94,10 @@ const BrandLink = styled.a`
 `
 
 const LanguageSelector = styled.select`
-  width: 100%;
+  width: 8em;
   background: #333;
   color: #ccc;
-  padding: 20px;
+  padding: 1em;
   text-align: center;
 `
 
