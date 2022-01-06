@@ -19,6 +19,7 @@ const Paragraph = styled.div`
   text-align: justify;
   align-self: center;
   width: 80vw;
+  margin: 1em 0;
 `
 
 export const About = () => {
@@ -33,6 +34,10 @@ export const About = () => {
           possess different passions and interests, including watching football,
           learning languages, writing poetry, pushing my body to the limits by
           working out and learning more about psychology.
+        </Paragraph>
+        <Paragraph>
+          Quote of the day: "No matter how things go, never ever trust someone
+          who won't trust you."
         </Paragraph>
       </Section>
     </>
