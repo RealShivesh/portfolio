@@ -33,16 +33,17 @@ const MenuBar = styled.nav`
   justify-content: flex-end;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
-    display: ${({ toggleMenu }) => (toggleMenu ? 'flex' : 'none')};
+    max-height: ${({ toggleMenu }) => (toggleMenu ? '50vh' : '0')};
+    opacity: ${({ toggleMenu }) => (toggleMenu ? '1' : '0')};
+    transition: max-height 0.25s ease-in;
+    z-index: -1;
   }
 `
 
 const MenuButton = styled.div`
   display: flex;
-  width: 2.5em;
-  height: 2.5em;
-  margin: 0.625em 1.25em;
-  color: #aaaa33;
+  margin: 0.5em 1em;
+  color: yellow;
   text-decoration: none;
   justify-content: flex-end;
   cursor: pointer;
@@ -70,7 +71,7 @@ const NavLink = styled.a`
 `
 
 const BrandLink = styled.a`
-  padding: 20px;
+  padding: 0.625em;
   color: yellow;
   text-decoration: none;
 
