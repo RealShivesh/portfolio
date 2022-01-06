@@ -10,7 +10,6 @@ import {
 function App() {
   return (
     <>
-      <header>Shivesh Sinha</header>
       <Navigation />
       <div id="about"></div>
       <About />

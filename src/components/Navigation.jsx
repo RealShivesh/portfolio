@@ -32,10 +32,8 @@ const MenuBar = styled.nav`
   display: flex;
   justify-content: flex-end;
   @media only screen and (max-width: 768px) {
-    //display: none;
-    position: relative;
     flex-direction: column;
-    display: flex;
+    display: ${({ toggleMenu }) => (toggleMenu ? 'flex' : 'none')};
   }
 `
 
@@ -48,14 +46,6 @@ const MenuButton = styled.div`
   text-decoration: none;
   justify-content: flex-end;
   cursor: pointer;
-  &:hover {
-    animation: mymove 1s;
-    @keyframes mymove {
-      50% {
-        transform: rotate(90deg);
-      }
-    }
-  }
 
   @media only screen and (min-width: 768px) {
     display: none;
@@ -74,7 +64,6 @@ const NavLink = styled.a`
     background: #33333333;
   }
   @media only screen and (max-width: 992px) {
-    align-items: flex-start;
     width: 100%;
     text-align: center;
   }
@@ -103,8 +92,6 @@ const LanguageSelector = styled.select`
 
 export const Navigation = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
-  const windowLength = window.innerWidth
-  console.log(windowLength)
   return (
     <>
       <NavBar>
@@ -113,10 +100,9 @@ export const Navigation = () => {
           <MenuButton
             onClick={() => {
               setToggleMenu(!toggleMenu)
-              console.log(toggleMenu)
             }}
           >
-            <FaBars size={40} />{' '}
+            <FaBars size={40} />
           </MenuButton>
         </Brand>
         <MenuBar toggleMenu={toggleMenu}>
