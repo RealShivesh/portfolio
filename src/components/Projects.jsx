@@ -25,6 +25,20 @@ export const Projects = () => {
             vanilla.
           </div>
         </article>
+        <article>
+          <h2>Weather App using React and Styled Components</h2>
+          <a
+            href="http://realshivesh.github.io/weather-pwa"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Weather App
+          </a>
+          <div>
+            This is a weather app which has been created using React and Styled
+            components.
+          </div>
+        </article>
       </Page>
     </>
   )
