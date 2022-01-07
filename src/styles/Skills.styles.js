@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const SkillSection = styled.article`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 `
 
@@ -13,7 +13,10 @@ const SkillHeader = styled.h2`
 `
 
 const Skill = styled.div`
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25em;
   user-select: none;
   cursor: pointer;
   &:hover {
