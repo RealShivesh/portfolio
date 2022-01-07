@@ -82,11 +82,17 @@ const BrandLink = styled.a`
 `
 
 const LanguageSelector = styled.select`
-  width: 8em;
-  background: #333;
-  color: #ccc;
-  padding: 1em;
+  font-size: 1rem;
+  width: 6em;
+  background: #cccccc00;
+  color: yellow;
+  padding: 0.2em;
   text-align: center;
+  & option {
+    background: #cccccc;
+    width: 6em;
+    padding: 0.2em;
+  }
 `
 
 export {
