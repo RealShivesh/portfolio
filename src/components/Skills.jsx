@@ -106,13 +106,13 @@ export const Skills = () => {
         </SkillSection>
         <SkillHeader>Foreign language skills</SkillHeader>
         <SkillSection>
-          <Skill>English</Skill>
-          <Skill>Hindi</Skill>
-          <Skill>Spanish</Skill>
-          <Skill>German</Skill>
-          <Skill>Russian</Skill>
-          <Skill>Turkish</Skill>
-          <Skill>Portuguese</Skill>
+          <Skill>English - english</Skill>
+          <Skill>Hindi - हिन्दी</Skill>
+          <Skill>Spanish - español</Skill>
+          <Skill>German - Deutsch</Skill>
+          <Skill>Russian - русский</Skill>
+          <Skill>Turkish - Türkçe</Skill>
+          <Skill>Portuguese - Português</Skill>
         </SkillSection>
       </Text>
     </>
