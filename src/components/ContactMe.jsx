@@ -1,5 +1,4 @@
-import styled from 'styled-components'
-import { GrMail } from 'react-icons/gr'
+import { Social } from '../styles/Main.styles'
 import {
   FaTwitter,
   FaLinkedin,
@@ -9,17 +8,6 @@ import {
   FaWhatsapp,
   FaEnvelope,
 } from 'react-icons/fa'
-
-const Social = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  & a {
-    margin: 20px;
-  }
-`
 
 export const ContactMe = () => {
   return (

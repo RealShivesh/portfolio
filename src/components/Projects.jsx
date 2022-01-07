@@ -1,8 +1,4 @@
-import styled from 'styled-components'
-
-const Page = styled.section`
-  height: 100vh;
-`
+import { Page } from '../styles/Main.styles'
 
 export const Projects = () => {
   return (

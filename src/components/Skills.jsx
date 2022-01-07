@@ -1,32 +1,5 @@
-import styled from 'styled-components'
-
-const Text = styled.section`
-  font-size: 1.2rem;
-  background: #ef233c;
-  margin: 0;
-`
-
-const SkillSection = styled.article`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-`
-
-const SkillHeader = styled.h2`
-  font-size: 1.55rem;
-  margin-left: 5vw;
-  margin-top: 0;
-`
-
-const Skill = styled.div`
-  padding: 20px;
-  user-select: none;
-  cursor: pointer;
-  &:hover {
-    background: #8d99ae;
-    color: #d90429;
-  }
-`
+import { Text } from '../styles/Main.styles'
+import { SkillSection, SkillHeader, Skill } from '../styles/Skills.styles'
 
 export const Skills = () => {
   return (

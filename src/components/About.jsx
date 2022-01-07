@@ -1,26 +1,4 @@
-import styled from 'styled-components'
-
-const Section = styled.section`
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #ef233c;
-`
-
-const Heading = styled.h1`
-  color: yellow;
-  font-size: 2.25rem;
-  margin: 0;
-  text-align: center;
-`
-
-const Paragraph = styled.div`
-  font-size: 1.5rem;
-  text-align: justify;
-  align-self: center;
-  width: 80vw;
-  margin: 1em 0;
-`
+import { Section, Heading, Paragraph } from '../styles/Main.styles'
 
 export const About = () => {
   return (
