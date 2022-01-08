@@ -7,10 +7,11 @@ export const About = () => {
         <Section>
           <Heading>About Me</Heading>
           <Paragraph>
-            Shivesh is currently a final year undergraduate student studying in
-            BITS Pilani Goa Campus. I am a front end web developer with a keen
-            awareness about the web development as well as UI/UX desgning. I
-            possess different passions and interests, including watching
+            I am currently a final year undergraduate student studying in BITS
+            Pilani Goa Campus. <br />
+            I am a front end web developer with a keen awareness about the web
+            development as well as UI/UX desgning.
+            <br />I possess different passions and interests, including watching
             football, learning languages, writing poetry, pushing my body to the
             limits by working out and learning more about psychology.
           </Paragraph>
