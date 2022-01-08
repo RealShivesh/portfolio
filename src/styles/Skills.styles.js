@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const SkillSection = styled.article`
   display: flex;
+  flex: 1;
   justify-content: space-evenly;
   flex-wrap: wrap;
 `
@@ -19,9 +20,10 @@ const Skill = styled.div`
   padding: 1.25em;
   user-select: none;
   cursor: pointer;
+  border-radius: 1em;
   &:hover {
-    background: #8d99ae;
-    color: #d90429;
+    background: #fff;
+    color: ${(props) => props.logoColor || 'green'};
   }
 `
 

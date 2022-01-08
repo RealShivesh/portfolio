@@ -1,9 +1,8 @@
-import { Text } from '../styles/Main.styles'
+import { Heading, Text } from '../styles/Main.styles'
 import { SkillSection, SkillHeader, Skill } from '../styles/Skills.styles'
 import {
   FaBootstrap,
   FaCss3,
-  FaFigma,
   FaGithub,
   FaHtml5,
   FaJs,
@@ -27,81 +26,85 @@ export const Skills = () => {
   return (
     <>
       <Text>
-        <h1>My Skills</h1>
+        <Heading>My Skills</Heading>
         <SkillHeader>Programming Languages</SkillHeader>
         <SkillSection>
-          <Skill>
-            HTML5 <FaHtml5 size={80} />{' '}
+          <Skill logoColor="#e34c26">
+            <FaHtml5 size={80} />
+            HTML5
           </Skill>
-          <Skill>
-            CSS3
+          <Skill logoColor="#2965f1">
             <FaCss3 size={80} />
+            CSS3
           </Skill>
-          <Skill>
-            JavaScript
+          <Skill logoColor="#F0DB4F">
             <FaJs size={80} />
+            JavaScript
           </Skill>
-          <Skill>
-            C++
+          <Skill logoColor="#044F88">
             <SiCplusplus size={80} />
+            C++
           </Skill>
           <Skill>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+              alt="python logo"
+            />
             Python
-            <FaPython size={80} />
           </Skill>
-          <Skill>
-            SASS
+          <Skill logoColor="#cd6799">
             <FaSass size={80} />
+            SASS
           </Skill>
         </SkillSection>
         <SkillHeader>Frameworks and Libraries</SkillHeader>
         <SkillSection>
           <Skill>
-            Nodejs
             <FaNodeJs size={80} />
+            Nodejs
           </Skill>
           <Skill>
-            Next.js
             <SiNextDotJs size={80} />
+            Next.js
           </Skill>
           <Skill>
-            Styled Components
             <SiStyledComponents size={80} />
+            Styled Components
           </Skill>
           <Skill>
-            React.js
             <FaReact size={80} />
+            React.js
           </Skill>
           <Skill>
-            Bootstrap
             <FaBootstrap size={80} />
+            Bootstrap
           </Skill>
           <Skill>
-            Material UI
             <SiMaterialUi size={80} />
+            Material UI
           </Skill>
         </SkillSection>
         <SkillHeader>Miscallenous Skills</SkillHeader>
         <SkillSection>
           <Skill>
-            GitHub
             <FaGithub size={80} />
+            GitHub
           </Skill>
           <Skill>
-            Figma
             <SiFigma size={80} />
+            Figma
           </Skill>
           <Skill>
-            Canva
             <SiCanva size={80} />
+            Canva
           </Skill>
           <Skill>
-            Adobe Illustrator
             <SiAdobeillustrator size={80} />
+            Adobe Illustrator
           </Skill>
           <Skill>
-            Adobe Photoshop
             <SiAdobephotoshop size={80} />
+            Adobe Photoshop
           </Skill>
         </SkillSection>
         <SkillHeader>Foreign language skills</SkillHeader>
