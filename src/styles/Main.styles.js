@@ -8,6 +8,7 @@ const Section = styled.section`
 const Heading = styled.h1`
   color: yellow;
   font-size: 2.25rem;
+  padding: 2em;
   margin: 0;
   text-align: center;
 `

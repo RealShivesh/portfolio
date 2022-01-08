@@ -26,12 +26,60 @@ export const Navigation = () => {
           </MenuButton>
         </Brand>
         <MenuBar toggleMenu={toggleMenu}>
-          <NavLink href="#about"> About Me</NavLink>
-          <NavLink href="#projects"> Projects</NavLink>
-          <NavLink href="#skills"> Skills</NavLink>
-          <NavLink href="#blogs"> Blogs</NavLink>
-          <NavLink href="#projects"> Project </NavLink>
-          <NavLink href="#contactme"> Contact Me</NavLink>
+          <NavLink
+            href="#about"
+            onClick={() => {
+              setToggleMenu(!toggleMenu)
+            }}
+          >
+            {' '}
+            About Me
+          </NavLink>
+          <NavLink
+            href="#projects"
+            onClick={() => {
+              setToggleMenu(!toggleMenu)
+            }}
+          >
+            {' '}
+            Projects
+          </NavLink>
+          <NavLink
+            href="#skills"
+            onClick={() => {
+              setToggleMenu(!toggleMenu)
+            }}
+          >
+            {' '}
+            Skills
+          </NavLink>
+          <NavLink
+            href="#blogs"
+            onClick={() => {
+              setToggleMenu(!toggleMenu)
+            }}
+          >
+            {' '}
+            Blogs
+          </NavLink>
+          <NavLink
+            href="#projects"
+            onClick={() => {
+              setToggleMenu(!toggleMenu)
+            }}
+          >
+            {' '}
+            Project{' '}
+          </NavLink>
+          <NavLink
+            href="#contactme"
+            onClick={() => {
+              setToggleMenu(!toggleMenu)
+            }}
+          >
+            {' '}
+            Contact Me
+          </NavLink>
           <LanguageSelector name="Select Language" id="language">
             <option value="en">English</option>
             <option value="de">Deutsch</option>
