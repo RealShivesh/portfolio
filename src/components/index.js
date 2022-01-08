@@ -4,5 +4,6 @@ import { Skills } from './Skills'
 import { Footer } from './Footer'
 import { Projects } from './Projects'
 import { ContactMe } from './ContactMe'
+import { Blogs } from './Blogs'
 
-export { About, Navigation, Skills, Footer, Projects, ContactMe }
+export { About, Navigation, Skills, Footer, Projects, ContactMe, Blogs }

@@ -1,10 +1,8 @@
 import styled from 'styled-components'
 
 const Section = styled.section`
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #ef233c;
 `
 
 const Heading = styled.h1`
@@ -24,6 +22,7 @@ const Paragraph = styled.div`
 
 const Page = styled.section`
   height: 100vh;
+  background: #ef233c;
 `
 
 const Text = styled.section`

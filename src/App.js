@@ -1,5 +1,6 @@
 import {
   About,
+  Blogs,
   ContactMe,
   Footer,
   Navigation,
@@ -17,10 +18,8 @@ function App() {
       <Skills />
       <div id="projects"></div>
       <Projects />
-      <h1 id="blogs">Blogs</h1>
-      <section>
-        I like to write some blogs, so here, my medium articles will be present.
-      </section>
+      <div id="blogs"></div>
+      <Blogs />
       <div id="contactme"></div>
       <ContactMe />
       <Footer />

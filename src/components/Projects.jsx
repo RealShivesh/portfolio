@@ -1,10 +1,10 @@
-import { Page } from '../styles/Main.styles'
+import { Heading, Page } from '../styles/Main.styles'
 
 export const Projects = () => {
   return (
     <>
       <Page>
-        <h1>Projects</h1>
+        <Heading>Projects</Heading>
         <article>
           <h2>Country database using JavaScript</h2>
           <a
