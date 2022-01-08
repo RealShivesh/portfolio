@@ -6,8 +6,8 @@ import {
   FaGithub,
   FaMedium,
   FaWhatsapp,
-  FaEnvelope,
 } from 'react-icons/fa'
+import { SiGmail } from 'react-icons/si'
 
 export const ContactMe = () => {
   return (
@@ -24,50 +24,49 @@ export const ContactMe = () => {
             rel="noreferrer"
             href="https://twitter.com/Real_Shivesh"
           >
-            <FaTwitter size={40} />
+            <FaTwitter size={60} fill={'#1DA1F2'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://linkedin.com/in/realshivesh"
           >
-            <FaLinkedin size={40} fill={'blue'} />
+            <FaLinkedin size={60} fill={'#0e76a8'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://pinterest.com/realshivesh"
           >
-            <FaPinterest size={40} />
+            <FaPinterest size={60} fill={'#E60023'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://github.com/realshivesh"
           >
-            <FaGithub size={40} />
+            <FaGithub size={60} fill={'#211F1F'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://medium.com/@realshivesh"
           >
-            <FaMedium size={40} />
+            <FaMedium size={60} fill={'#000'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://mailto:realshivesh@gmail.com"
+            href="mailto:realshivesh@gmail.com"
           >
-            <FaEnvelope size={40} />
+            <SiGmail size={60} fill={'red'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://wa.me/+918789110751"
           >
-            {' '}
-            <FaWhatsapp size={40} />{' '}
+            <FaWhatsapp size={60} fill={'#25D366'} />
           </a>
         </Social>
       </Page>

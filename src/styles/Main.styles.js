@@ -24,6 +24,10 @@ const Paragraph = styled.div`
 const Page = styled.section`
   height: 100vh;
   background: #ef233c;
+  @media (max-width: 768px) {
+    min-height: 100vh;
+    height: 100%;
+  }
 `
 
 const Text = styled.section`
@@ -49,7 +53,9 @@ const Social = styled.div`
   flex-grow: 1;
   flex-wrap: wrap;
   & a {
-    margin: 20px;
+    margin: 1.5em;
+    text-decoration: none;
+    background: #fff;
   }
 `
 
