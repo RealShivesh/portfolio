@@ -23,6 +23,7 @@ const Paragraph = styled.div`
 
 const Page = styled.section`
   height: 100vh;
+  width: 100vw;
   background: #ef233c;
   @media (max-width: 768px) {
     min-height: 100vh;
@@ -46,6 +47,24 @@ const FooterRow = styled.footer`
   text-align: center;
 `
 
+const Project = styled.article`
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  & div {
+    display: flex;
+    flex-direction: row;
+  }
+`
+
+const DemoLink = styled.a`
+  padding: 0.75em;
+  width: 4em;
+  background: yellow;
+  text-decoration: none;
+  font-size: 1.2rem;
+`
+
 const Social = styled.div`
   display: flex;
   justify-content: center;
@@ -59,4 +78,14 @@ const Social = styled.div`
   }
 `
 
-export { Section, Heading, Paragraph, Page, Text, FooterRow, Social }
+export {
+  Section,
+  Heading,
+  Paragraph,
+  Page,
+  Text,
+  FooterRow,
+  Social,
+  Project,
+  DemoLink,
+}

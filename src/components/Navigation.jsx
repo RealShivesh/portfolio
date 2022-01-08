@@ -69,7 +69,7 @@ export const Navigation = () => {
             }}
           >
             {' '}
-            Project{' '}
+            Projects{' '}
           </NavLink>
           <NavLink
             href="#contactme"
