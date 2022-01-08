@@ -21,9 +21,18 @@ const Skill = styled.div`
   user-select: none;
   cursor: pointer;
   border-radius: 1em;
+
+  & img {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    filter: contrast(100%) brightness(0%);
+  }
   &:hover {
-    background: #fff;
-    color: ${(props) => props.logoColor || 'green'};
+    background: #987678;
+    color: ${(props) => props.logoColor || '#012345'};
+    & img {
+      filter: none;
+    }
   }
 `
 

@@ -17,10 +17,13 @@ import {
   SiCanva,
   SiCplusplus,
   SiFigma,
+  SiGithub,
   SiMaterialUi,
   SiNextDotJs,
   SiStyledComponents,
 } from 'react-icons/si'
+
+import NextJs from '../assets/images/Nextjs-logo.svg'
 
 export const Skills = () => {
   return (
@@ -64,14 +67,14 @@ export const Skills = () => {
             Nodejs
           </Skill>
           <Skill>
-            <SiNextDotJs size={80} />
+            <img src={NextJs} alt="" />
             Next.js
           </Skill>
           <Skill>
             <SiStyledComponents size={80} />
             Styled Components
           </Skill>
-          <Skill>
+          <Skill logoColor="#61DBFB">
             <FaReact size={80} />
             React.js
           </Skill>
@@ -87,12 +90,15 @@ export const Skills = () => {
         <SkillHeader>Miscallenous Skills</SkillHeader>
         <SkillSection>
           <Skill>
-            <FaGithub size={80} />
-            GitHub
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+              alt="figma logo"
+            />
+            Figma
           </Skill>
           <Skill>
-            <SiFigma size={80} />
-            Figma
+            <SiGithub size={80} />
+            GitHub
           </Skill>
           <Skill>
             <SiCanva size={80} />
