@@ -7,7 +7,7 @@ const NavBar = styled.header`
   justify-content: space-between;
   overflow-x: hidden;
   background: linear-gradient(0deg, #161f6d 0%, #00abe1 100%);
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     flex-direction: column;
   }
 `
@@ -17,7 +17,7 @@ const Brand = styled.div`
   font-size: 2rem;
   color: white;
   justify-content: center;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     justify-content: space-between;
     flex-direction: row;
   }
@@ -26,7 +26,7 @@ const Brand = styled.div`
 const MenuBar = styled.nav`
   display: flex;
   justify-content: flex-end;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     flex-direction: column;
     max-height: ${({ toggleMenu }) => (toggleMenu ? '50vh' : '0')};
     opacity: ${({ toggleMenu }) => (toggleMenu ? '1' : '0')};
@@ -43,7 +43,7 @@ const MenuButton = styled.div`
   justify-content: flex-end;
   cursor: pointer;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     display: none;
   }
 `
@@ -73,7 +73,7 @@ const BrandLink = styled.a`
   &:hover {
     background: #33333333;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     align-items: flex-start;
   }
 `
