@@ -29,7 +29,6 @@ const Paragraph = styled.div`
 
 const Page = styled.section`
   width: 100%;
-  background: #ef233c;
   overflow-x: hidden;
   min-height: 100vh;
   height: 100%;
@@ -37,7 +36,6 @@ const Page = styled.section`
 
 const Text = styled.section`
   font-size: 1.2rem;
-  background: #ef233c;
   margin: 0;
 `
 
