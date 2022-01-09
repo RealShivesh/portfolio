@@ -6,11 +6,7 @@ const NavBar = styled.header`
   display: flex;
   justify-content: space-between;
   overflow-x: hidden;
-  background: linear-gradient(
-    0deg,
-    rgba(239, 35, 60, 1) 0%,
-    rgba(43, 45, 66, 1) 100%
-  );
+  background: linear-gradient(0deg, #161f6d 0%, #00abe1 100%);
   @media only screen and (max-width: 768px) {
     flex-direction: column;
   }

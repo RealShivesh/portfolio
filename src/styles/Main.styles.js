@@ -6,7 +6,7 @@ const Section = styled.section`
 `
 
 const Heading = styled.h1`
-  color: yellow;
+  color: ${(props) => props.theme.header};
   font-size: 2.25rem;
   padding: 2em;
   margin: 0;
@@ -29,6 +29,8 @@ const Paragraph = styled.div`
 
 const Page = styled.section`
   width: 100%;
+  background: ${(props) => props.theme.body};
+  color: ${(props) => props.theme.color};
   overflow-x: hidden;
   min-height: 100vh;
   height: 100%;
