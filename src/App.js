@@ -9,11 +9,13 @@ import {
   Projects,
   Skills,
 } from './components'
+import { ToggleSwitch } from './components/ToggleSwitch'
 import { GlobalStyles } from './styles/GlobalStyles'
 import { darkTheme, lightTheme } from './styles/Themes'
 
 function App() {
   const [theme, setTheme] = useState('light')
+
   const themeToggler = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light')
   }
@@ -21,9 +23,11 @@ function App() {
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <>
-        <GlobalStyles />
-        <Navigation />
-        <button onClick={themeToggler}>Switch theme</button>
+        <Navigation
+          theme={theme}
+          setTheme={setTheme}
+          themeToggler={themeToggler}
+        />
         <div id="about"></div>
         <About />
         <div id="skills"></div>

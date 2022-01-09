@@ -9,14 +9,21 @@ import {
   NavLink,
   LanguageSelector,
 } from '../styles/Navigation.styles'
+import { ToggleSwitch } from './ToggleSwitch'
 
-export const Navigation = () => {
+export const Navigation = ({ theme, setTheme, themeToggler }) => {
   const [toggleMenu, setToggleMenu] = useState(false)
+
   return (
     <>
       <NavBar>
         <Brand>
           <BrandLink href="#home">RealShivesh</BrandLink>
+          <ToggleSwitch
+            theme={theme}
+            setTheme={setTheme}
+            themeToggler={themeToggler}
+          />
           <MenuButton
             onClick={() => {
               setToggleMenu(!toggleMenu)

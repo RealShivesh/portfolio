@@ -19,6 +19,7 @@ export const About = () => {
             Quote of the day: "No matter how things go, never ever trust someone
             who won't trust you."
           </Paragraph>
+          <Paragraph></Paragraph>
         </Section>
       </Page>
     </>
