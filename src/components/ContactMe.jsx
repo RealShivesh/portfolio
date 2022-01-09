@@ -13,7 +13,7 @@ export const ContactMe = () => {
   return (
     <>
       <Page>
-        <Heading>Contact Me</Heading>
+        <Heading>Let's get in touch!</Heading>
         <div>
           Wanna connect with me? Why not? You can connect with me using the
           following links:
