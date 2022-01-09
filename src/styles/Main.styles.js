@@ -19,16 +19,20 @@ const Paragraph = styled.div`
   align-self: center;
   width: 80vw;
   margin: 1em 0;
+
+  & img {
+    width: 100%;
+    max-width: 36em;
+    text-align: center;
+  }
 `
 
 const Page = styled.section`
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: #ef233c;
-  @media (max-width: 768px) {
-    min-height: 100vh;
-    height: 100%;
-  }
+  overflow-x: hidden;
+  min-height: 100vh;
+  height: 100%;
 `
 
 const Text = styled.section`

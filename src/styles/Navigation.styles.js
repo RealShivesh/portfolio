@@ -5,6 +5,7 @@ const NavBar = styled.header`
   top: 0;
   display: flex;
   justify-content: space-between;
+  overflow-x: hidden;
   background: linear-gradient(
     0deg,
     rgba(239, 35, 60, 1) 0%,
