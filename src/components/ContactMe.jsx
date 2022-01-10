@@ -24,49 +24,49 @@ export const ContactMe = () => {
             rel="noreferrer"
             href="https://twitter.com/Real_Shivesh"
           >
-            <FaTwitter size={60} fill={'#1DA1F2'} />
+            <FaTwitter fill={'#1DA1F2'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://linkedin.com/in/realshivesh"
           >
-            <FaLinkedin size={60} fill={'#0e76a8'} />
+            <FaLinkedin fill={'#0e76a8'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://pinterest.com/realshivesh"
           >
-            <FaPinterest size={60} fill={'#E60023'} />
+            <FaPinterest fill={'#E60023'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://github.com/realshivesh"
           >
-            <FaGithub size={60} fill={'#211F1F'} />
+            <FaGithub fill={'#211F1F'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://medium.com/@realshivesh"
           >
-            <FaMedium size={60} fill={'#000'} />
+            <FaMedium fill={'#000'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="mailto:realshivesh@gmail.com"
           >
-            <SiGmail size={60} fill={'red'} />
+            <SiGmail fill={'red'} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://wa.me/+918789110751"
           >
-            <FaWhatsapp size={60} fill={'#25D366'} />
+            <FaWhatsapp fill={'#25D366'} />
           </a>
         </Social>
       </Page>
