@@ -4,9 +4,14 @@ const NavBar = styled.header`
   position: sticky;
   top: 0;
   display: flex;
+  border: 0;
+  z-index: 12;
   justify-content: space-between;
   overflow-x: hidden;
-  background: linear-gradient(0deg, #161f6d 0%, #00abe1 100%);
+  background: ${(props) =>
+    props.theme === 'dark'
+      ? `linear-gradient(0deg, #161f6d 0%, #00abe1 100%)`
+      : `linear-gradient(0deg, #00abe1 0%, #161f6d 100%)`};
   @media only screen and (max-width: 992px) {
     flex-direction: column;
   }
@@ -15,8 +20,9 @@ const NavBar = styled.header`
 const Brand = styled.div`
   display: flex;
   font-size: 2rem;
+  font-weight: 800;
   color: white;
-  justify-content: center;
+  justify-content: space-between;
   @media only screen and (max-width: 992px) {
     justify-content: space-between;
     flex-direction: row;
@@ -49,19 +55,21 @@ const MenuButton = styled.div`
 `
 
 const NavLink = styled.a`
-  padding: 1em;
-  width: 6em;
+  padding: 0.25em;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 5em;
+  font-size: 1.2rem;
   color: yellow;
   text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
-
   &:hover {
     background: #33333333;
   }
   @media only screen and (max-width: 992px) {
     width: 100%;
     text-align: center;
+    padding: 0.5em;
   }
 `
 
@@ -79,14 +87,14 @@ const BrandLink = styled.a`
 `
 
 const LanguageSelector = styled.select`
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 6em;
-  background: #cccccc00;
-  color: yellow;
+  background: ${(props) => props.theme.body};
+  color: ${(props) => props.theme.color};
   padding: 0.2em;
   text-align: center;
   & option {
-    background: #cccccc;
+    background: ${(props) => props.theme.body};
     width: 6em;
     padding: 0.2em;
   }

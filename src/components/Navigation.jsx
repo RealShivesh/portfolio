@@ -16,13 +16,14 @@ export const Navigation = ({ theme, setTheme, themeToggler }) => {
 
   return (
     <>
-      <NavBar>
+      <NavBar theme={theme}>
         <Brand>
           <BrandLink href="#home">RealShivesh</BrandLink>
           <ToggleSwitch
             theme={theme}
             setTheme={setTheme}
             themeToggler={themeToggler}
+            toggleMenu={toggleMenu}
           />
           <MenuButton
             onClick={() => {
@@ -32,6 +33,7 @@ export const Navigation = ({ theme, setTheme, themeToggler }) => {
             <FaBars size={40} />
           </MenuButton>
         </Brand>
+
         <MenuBar toggleMenu={toggleMenu}>
           <NavLink
             href="#about"
@@ -40,7 +42,7 @@ export const Navigation = ({ theme, setTheme, themeToggler }) => {
             }}
           >
             {' '}
-            About Me
+            About
           </NavLink>
           <NavLink
             href="#projects"
@@ -75,8 +77,7 @@ export const Navigation = ({ theme, setTheme, themeToggler }) => {
               setToggleMenu(!toggleMenu)
             }}
           >
-            {' '}
-            Projects{' '}
+            Projects
           </NavLink>
           <NavLink
             href="#contactme"
@@ -85,13 +86,13 @@ export const Navigation = ({ theme, setTheme, themeToggler }) => {
             }}
           >
             {' '}
-            Contact Me
+            Contact
           </NavLink>
-          <LanguageSelector name="Select Language" id="language">
+          {/* <LanguageSelector name="Select Language" id="language">
             <option value="en">English</option>
             <option value="de">Deutsch</option>
             <option value="es">Español</option>
-          </LanguageSelector>
+          </LanguageSelector> */}
         </MenuBar>
       </NavBar>
     </>
