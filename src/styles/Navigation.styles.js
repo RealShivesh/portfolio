@@ -37,7 +37,7 @@ const MenuBar = styled.nav`
 
 const MenuButton = styled.div`
   display: flex;
-  margin: 0.5em 1em;
+  margin: 0.5em 0.5em;
   color: yellow;
   text-decoration: none;
   justify-content: flex-end;

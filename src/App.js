@@ -9,8 +9,6 @@ import {
   Projects,
   Skills,
 } from './components'
-import { ToggleSwitch } from './components/ToggleSwitch'
-import { GlobalStyles } from './styles/GlobalStyles'
 import { darkTheme, lightTheme } from './styles/Themes'
 
 function App() {
