@@ -73,12 +73,16 @@ const Social = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: flex-end;
   flex-grow: 1;
   flex-wrap: wrap;
   & a {
     margin: 1.5em;
     text-decoration: none;
-    background: #fff;
+    & svg {
+      width: 3em;
+      height: 3em;
+    }
   }
 `
 
