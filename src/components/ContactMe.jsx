@@ -1,13 +1,4 @@
 import { Heading, Page, Social } from '../styles/Main.styles'
-import {
-  FaTwitter,
-  FaLinkedin,
-  FaPinterest,
-  FaGithub,
-  FaMedium,
-  FaWhatsapp,
-} from 'react-icons/fa'
-import { SiGmail } from 'react-icons/si'
 import { ContactList } from '../data/ContactList'
 
 export const ContactMe = () => {
@@ -22,7 +13,7 @@ export const ContactMe = () => {
         {ContactList.map((contact) => (
           <Social>
             <a target="_blank" rel="noreferrer" href={contact.link}>
-              <contact.icon fill={'#1DA1F2'} />
+              <contact.icon />
             </a>
             {contact.mode}
           </Social>

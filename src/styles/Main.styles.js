@@ -47,7 +47,7 @@ const FooterRow = styled.footer`
   padding: 0.6rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
-  background: #8d99ae;
+  background: ${(props) => props.theme.body};
   text-align: center;
 `
 
