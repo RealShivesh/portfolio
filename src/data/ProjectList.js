@@ -9,20 +9,20 @@ export const ProjectList = [
   {
     id: 1,
     name: 'Weather App',
-    link: 'http://realshivesh.github.io/countries',
+    link: 'http://realshivesh.github.io/weather-pwa',
     description:
       'This is a weather app which has been created using React and Styled components',
   },
   {
     id: 2,
     name: 'Budget Tracker',
-    link: 'http://realshivesh.github.io/countries',
+    link: 'http://realshivesh.github.io/budget-tracker',
     description: 'This is a budget tracking app using the CRUD principle.',
   },
   {
     id: 3,
     name: 'To-do list',
-    link: 'http://realshivesh.github.io/countries',
+    link: 'http://realshivesh.github.io/todo',
     description: 'A simple to-do list app using basics of react',
   },
 ]

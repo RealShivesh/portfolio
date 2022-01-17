@@ -54,16 +54,19 @@ const FooterRow = styled.footer`
 const Project = styled.article`
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 1em;
   & div {
     display: flex;
     flex-direction: row;
+    width: 50%;
   }
 `
 
 const DemoLink = styled.a`
-  padding: 0.75em;
-  width: 4em;
+  padding: 0.25em;
+  width: 100%;
+  max-width: 2.5em;
   background: yellow;
   text-decoration: none;
   font-size: 1.2rem;
