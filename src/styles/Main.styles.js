@@ -74,6 +74,7 @@ const DemoLink = styled.a`
 
 const Social = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: flex-end;
