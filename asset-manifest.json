@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/portfolio/static/js/main.f716bd6c.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f716bd6c.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.35be96fe.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.35be96fe.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
-    "static/js/2.12fffe56.chunk.js": "/portfolio/static/js/2.12fffe56.chunk.js",
-    "static/js/2.12fffe56.chunk.js.map": "/portfolio/static/js/2.12fffe56.chunk.js.map",
+    "static/js/2.820d457f.chunk.js": "/portfolio/static/js/2.820d457f.chunk.js",
+    "static/js/2.820d457f.chunk.js.map": "/portfolio/static/js/2.820d457f.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/portfolio/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.12fffe56.chunk.js.LICENSE.txt": "/portfolio/static/js/2.12fffe56.chunk.js.LICENSE.txt",
+    "static/js/2.820d457f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.820d457f.chunk.js.LICENSE.txt",
     "static/media/Nextjs-logo.2e296d8e.svg": "/portfolio/static/media/Nextjs-logo.2e296d8e.svg",
     "static/media/full-moon-face.58e85784.png": "/portfolio/static/media/full-moon-face.58e85784.png",
     "static/media/new-moon-face.21fbf12f.png": "/portfolio/static/media/new-moon-face.21fbf12f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a9f76519.js",
-    "static/js/2.12fffe56.chunk.js",
+    "static/js/2.820d457f.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.f716bd6c.chunk.js"
+    "static/js/main.35be96fe.chunk.js"
   ]
 }
