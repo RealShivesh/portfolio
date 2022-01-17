@@ -31,10 +31,10 @@ const Skill = styled.div`
   & img {
     width: 5rem;
     aspect-ratio: 1/1;
-    filter: contrast(100%) brightness(0%);
+    color: ${(props) => props.theme.color};
   }
   &:hover {
-    background: #987678;
+    background: ${(props) => props.theme.color};
     color: ${(props) => props.logoColor || '#012345'};
     & img {
       filter: none;
