@@ -1,6 +1,19 @@
 import { Section, Heading, Paragraph, Page } from '../styles/Main.styles'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 
 export const About = () => {
+  const [quote, setQuote] = useState('')
+
+  const fetchQuote = async () => {
+    const response = await axios.get('https://api.quotable.io/random')
+    setQuote(response.data.content)
+  }
+
+  useEffect(() => {
+    fetchQuote()
+  }, [])
+
   return (
     <>
       <Page>
@@ -15,10 +28,7 @@ export const About = () => {
             football, learning languages, writing poetry, pushing my body to the
             limits by working out and learning more about psychology.
           </Paragraph>
-          <Paragraph>
-            Quote of the day: "No matter how things go, never ever trust someone
-            who won't trust you."
-          </Paragraph>
+          <Paragraph>{quote}</Paragraph>
           <Paragraph></Paragraph>
         </Section>
       </Page>
