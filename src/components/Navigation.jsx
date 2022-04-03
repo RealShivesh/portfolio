@@ -45,15 +45,6 @@ export const Navigation = ({ theme, setTheme, themeToggler }) => {
             About
           </NavLink>
           <NavLink
-            href="#projects"
-            onClick={() => {
-              setToggleMenu(!toggleMenu)
-            }}
-          >
-            {' '}
-            Projects
-          </NavLink>
-          <NavLink
             href="#skills"
             onClick={() => {
               setToggleMenu(!toggleMenu)
@@ -61,6 +52,15 @@ export const Navigation = ({ theme, setTheme, themeToggler }) => {
           >
             {' '}
             Skills
+          </NavLink>
+          <NavLink
+            href="#projects"
+            onClick={() => {
+              setToggleMenu(!toggleMenu)
+            }}
+          >
+            {' '}
+            Projects
           </NavLink>
           <NavLink
             href="#blogs"
