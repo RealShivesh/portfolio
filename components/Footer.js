@@ -16,21 +16,21 @@ function Footer() {
                 rel="noopener noreferrer"
                 href="https://github.com/realshivesh"
             >
-                <AiFillGithub size={32} />
+                <AiFillGithub size={40} />
             </Icon>
             <Icon
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://linkedin.com/in/realshivesh"
             >
-                <AiFillLinkedin size={32} />
+                <AiFillLinkedin size={40} />
             </Icon>
             <Icon
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://twitter.com/Real_Shivesh"
             >
-                <AiFillTwitterCircle size={32} />
+                <AiFillTwitterCircle size={40} />
             </Icon>
         </Row>
     )
