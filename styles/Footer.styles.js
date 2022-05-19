@@ -1,16 +1,6 @@
 import styled from 'styled-components'
 
-export const Name = styled.a`
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 0.5em 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
-
-export const Menu = styled.div`
+export const Row = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,8 +11,7 @@ export const Menu = styled.div`
     padding: 0 1rem;
 `
 
-export const NavLink = styled.a`
-    text-decoration: none;
+export const Icon = styled.a`
     color: #000;
     font-size: 1.25rem;
     font-weight: bold;

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
-import { Name } from '../styles/Header.styles'
+import { Menu, Name, NavLink } from '../styles/Header.styles'
 
 export const Header = () => {
     return (
@@ -8,15 +8,22 @@ export const Header = () => {
             <Name>
                 <Link href="/">RealShivesh</Link>
             </Name>
-            <div>
-                <Link href="/about">About</Link>
-                <Link href="/projects">
-                    <a>Projects</a>
-                </Link>
-                <Link href="/contact">
-                    <a>Contact</a>
-                </Link>
-            </div>
+            <Menu>
+                <NavLink>
+                    {' '}
+                    <Link href="/about">About</Link>
+                </NavLink>
+                <NavLink>
+                    <Link href="/projects">
+                        <a>Projects</a>
+                    </Link>
+                </NavLink>
+                <NavLink>
+                    <Link href="/contact">
+                        <a>Contact</a>
+                    </Link>
+                </NavLink>
+            </Menu>
         </div>
     )
 }
