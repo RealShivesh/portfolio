@@ -15,7 +15,7 @@ function contact() {
                             <a href={link.link}>
                                 <link.icon />
                             </a>
-                            <div>{link.name}</div>
+                            <div>{link.mode}</div>
                         </div>
                     ))}
                 </div>
