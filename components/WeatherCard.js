@@ -48,6 +48,18 @@ const WeatherCard = () => {
                                 {weatherData.location.country}
                             </span>
                         </div>
+                        <>
+                            Forecast
+                            {weatherData.forecast.forecastday.map((day) => (
+                                <div key={day.date}>
+                                    <span>{day.date}</span>
+                                    <span>{day.day.condition.text}</span>
+                                    <span>{day.day.avgtemp_c}&deg;C</span>
+                                    <span>{day.day.maxtemp_c}&deg;C</span>
+                                    <span>{day.day.mintemp_c}&deg;C</span>
+                                </div>
+                            ))}
+                        </>
                     </div>
                 )}
             </div>
