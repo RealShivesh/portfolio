@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { fetchWeather } from '../data/FetchWeather'
+import { Card } from '../styles/Globals.styles'
 
 const WeatherCard = () => {
     const [weatherData, setWeatherData] = useState({})
@@ -8,7 +9,7 @@ const WeatherCard = () => {
     //get current location coordinates
     const getLocation = () => {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
+            navigator.geolocation.watchPosition(
                 (position) => {
                     const { latitude, longitude } = position.coords
                     fetchWeather(`${latitude},${longitude}`)
@@ -29,24 +30,28 @@ const WeatherCard = () => {
         }
     }
 
+    useEffect(() => {
+        getLocation()
+    }, [])
+
     return (
         <div>
             <h3>Weather of the place</h3>
-            <button onClick={getLocation}>Get Weather</button>
+
             <div>
                 {weatherData.current && (
-                    <div>
+                    <Card>
                         <div>
                             <span>{weatherData.current.temp_c}</span>
                             <span>&deg;C</span>
                         </div>
                         <div>
-                            <span>{weatherData.current.condition.text}</span>
-                            <span>
+                            <div>{weatherData.current.condition.text}</div>
+                            <div>
                                 {weatherData.location.name},{' '}
                                 {weatherData.location.region},{' '}
                                 {weatherData.location.country}
-                            </span>
+                            </div>
                         </div>
                         <>
                             Forecast
@@ -60,7 +65,7 @@ const WeatherCard = () => {
                                 </div>
                             ))}
                         </>
-                    </div>
+                    </Card>
                 )}
             </div>
         </div>
